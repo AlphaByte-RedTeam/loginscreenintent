@@ -2,4 +2,5 @@
     <string name="app_name">login-screen-intent</string>
     <string name="logo">ASSET</string>
     <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>
