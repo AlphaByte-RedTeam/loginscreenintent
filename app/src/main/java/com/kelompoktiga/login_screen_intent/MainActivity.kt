@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             } else if (password.text.toString().equals("12345678")) {
                 Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                 val passIntent: Intent = Intent(this, HomeActivity::class.java)
+                val users: String = username.text.toString()
+                passIntent.putExtra("Welcome, ", users)
+                startActivity(passIntent)
+            } else {
+                Toast.makeText(this, "Wrong password!", Toast.LENGTH_SHORT).show()
             }
         }
     }
