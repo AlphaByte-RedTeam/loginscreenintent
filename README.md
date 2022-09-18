@@ -4,6 +4,8 @@ Android version: 12 (S) <br />
 Android Studio version: [latest](https://developer.android.com/studio) <br />
 Kotlin version: [latest](https://developer.android.com/kotlin) <br />
 
+Note: If you see an error regarding to incompatible version, please consider to update your IDE or your language.
+
 To use the apps, please follow the instruction below:
 
 1. Open terminal and do the following command
