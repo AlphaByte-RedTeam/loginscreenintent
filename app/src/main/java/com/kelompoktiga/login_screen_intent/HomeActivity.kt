@@ -19,5 +19,13 @@ class HomeActivity : AppCompatActivity() {
         if (bundle != null) {
             user.text = String.format("Welcome, %s", bundle.getString("Username"))
         }
+
+        logoutButton.setOnClickListener {
+            val logoutIntent: Intent = Intent(this, MainActivity::class.java)
+            logoutIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            logoutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            logoutIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(logoutIntent)
+        }
     }
 }
