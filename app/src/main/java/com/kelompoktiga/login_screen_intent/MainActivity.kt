@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                 val passIntent: Intent = Intent(this, HomeActivity::class.java)
                 val users: String = username.text.toString()
-                passIntent.putExtra("Welcome, ", users)
+                passIntent.putExtra("Username", users)
                 startActivity(passIntent)
             } else {
                 Toast.makeText(this, "Wrong password!", Toast.LENGTH_SHORT).show()
